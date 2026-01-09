@@ -1,5 +1,6 @@
 import React from 'react';
 import { PatientConfig, Gender } from '../types';
+import smylumLogo from '@/smylum.png';
 
 interface WelcomeScreenProps {
   config: PatientConfig;
@@ -25,7 +26,7 @@ const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ config }) => {
         {/* Logo Image - Natural shape, no circle crop */}
         <div className="relative z-10">
             <img 
-                src="./smylum.png" 
+                src={smylumLogo} 
                 alt="Smylum Logo" 
                 className="w-auto h-40 md:h-56 lg:h-64 object-contain drop-shadow-[0_0_25px_rgba(234,179,8,0.2)]"
             />

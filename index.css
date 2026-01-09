@@ -1,0 +1,47 @@
+/* Custom Font Configuration */
+@font-face {
+  font-family: 'PatientNameFont';
+  src: url('./font.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+}
+
+.font-patient {
+  font-family: 'PatientNameFont', 'Playfair Display', serif;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-serif-display {
+  font-family: 'Playfair Display', serif;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient-gold {
+  background: linear-gradient(-45deg, #000000, #1a1a1a, #463E10, #B8860B, #FFD700, #B8860B, #1a1a1a, #000000);
+  background-size: 400% 400%;
+  animation: shimmer 15s ease infinite;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(20, 20, 20, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+}
